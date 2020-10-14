@@ -463,6 +463,10 @@ footer main{
     .logo{
         width: 25%;
     }
+    .main-nav{
+        margin: 1rem;
+        font-size: 1.2rem;
+    }
     /* footer main{
         bottom: 0;
     
