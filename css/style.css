@@ -208,18 +208,6 @@ header div p{
 
 @media screen and (max-width: 967px){
 
-    .main-header {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .hide{
-        display: none;
-    }
-    .show {
-        display: block;
-    }
-
 
     /* #nav-ul .show {
         display: flex;
@@ -230,12 +218,14 @@ header div p{
         display: block;
     } */
 }
-
-@media screen and (min-width: 967px) {
+.hamburger{
+    display: none;
+}
+/* @media screen and (min-width: 967px) {
     .hamburger {
         display: none
     }
-}
+} */
 
 /* NEED TO FIX THIS LATER */
 
@@ -436,10 +426,69 @@ footer main{
     font-family: var(--ff-secondary);
     color: var(--clr-dark);
 }
+@media only screen and (max-width: 900px){
+    .main-header{
+        height: auto;
+        padding: 4rem 2rem;
+        justify-content: space-between;
+    }
+    .main-header--first{
+        width: 47%;
+    }
+    .main-header--first h1{
+        margin: 0;
+        font-size: 2rem;
+    }
+    .main-header--first .text{
+        font-size: 1rem;
+    }
+    .main-header--second{
+        width: 45%;
+    }
+    .wrapper{
+        margin-top: 3rem;
+    }
+    .wrapper main{
+        width: 90%;
+    }
+    .differnt-section h3{
+        font-size: 1.4rem;
+        margin: 1rem 0 1rem 0;
+    }
+    #how-we-work{
+        margin: 4rem 0;
+        height: auto;
+        padding: 1rem;
+    }
+    .logo{
+        width: 25%;
+    }
+    /* footer main{
+        bottom: 0;
+    
+    }
+    .footer-nav{
+        padding-top: 20px;
+    } */
 
-
+}
 /* mobile version */
 @media only screen and (max-width: 600px){
+    .hamburger{
+        display: block;
+    }
+    .main-header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hide{
+        display: none;
+    }
+    .show {
+        display: block;
+    }
+
     .main-header{
         height: auto;
         padding: 2rem 1rem;
